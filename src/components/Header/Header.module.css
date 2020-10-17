@@ -1,0 +1,34 @@
+.Header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+}
+
+.HeaderWrapper {
+    width: 100%;
+    max-width: 1480px;
+    height: 100%;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.HeaderRightSection {
+    display: flex;
+    align-items: center;
+}
+
+.HeaderPhone {
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: 40px;
+}
+
+.HeaderPhone a {
+    text-decoration: none;
+    color: #282c34;
+}

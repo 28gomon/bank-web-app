@@ -1,0 +1,149 @@
+.CardDetail {
+    position: relative;
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.CardDetailHeader {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #eaeaea;
+}
+
+.CardDetailHeaderImage {
+    width: 50%;
+    padding-right: 15px;
+}
+
+.CardDetailHeaderImage img {
+    width: 100%;
+}
+
+.CardDetailHeaderInfo {
+    position: relative;
+    width: 50%;
+    padding-left: 15px;
+}
+
+.CardDetailHeaderInfo h1 {
+    font-size: 40px;
+    margin-top: 15px;
+}
+
+.CardDetailHeaderInfo p {
+    font-size: 20px;
+    line-height: 30px;
+    color: gray;
+}
+
+.CardDetailHeaderButtonGroup {
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    height: 60px;
+}
+
+.CardDetailBtnListCard, .CardDetailBtnOrderCard {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 5px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.CardDetailBtnListCard {
+    margin-right: 40px;
+    border: 2px solid #6d64ff;
+    color: #6d64ff;
+}
+
+.CardDetailBtnOrderCard {
+    background-color: #6d64ff;
+    color: #fafafa;
+}
+
+.CardDetailTizer {
+    margin-bottom: 80px;
+}
+
+.CardDetailTizer h2 {
+    text-align: center;
+}
+
+.CardDetailTizerItems {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.CardDetailTizerItems > div {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.TizerIcon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: #6d64ff;
+}
+
+.TizerText {
+    font-size: 20px;
+}
+
+.CardDetailTarifs h2 {
+    text-align: center;
+}
+
+.CardDetailTarifsTable {
+    margin-bottom: 80px;
+}
+
+.CardDetailTarifsItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    height: 60px;
+}
+
+.CardDetailTarifsItems:not(:last-child) {
+    border-bottom: 1px solid #eaeaea;
+}
+
+.CardDetailTarifsItems > div {
+    white-space: nowrap;
+}
+
+.CardDetailTarifsItems > div:last-child {
+    font-weight: bolder;
+}
+
+.CardDetailTarifsItems span {
+    width: 100%;
+    position: relative;
+}
+
+.CardDetailTarifsItems span::after {
+    content: '';
+    position: absolute;
+    bottom: -7px;
+    left: 5px;
+    right: 5px;
+}
+
+.CardDetailTarifsItems:not(:last-child) {
+    margin-bottom: 20px;
+}

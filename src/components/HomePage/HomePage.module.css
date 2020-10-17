@@ -1,0 +1,114 @@
+.HomeSlider {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    max-width: 1480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+}
+
+.SliderItem {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 70vh;
+    min-height: 200px;
+    max-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    outline: none;
+    border: none;
+}
+
+.SliderItem > div {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+
+.SliderItemLeftBlock {
+    position: relative;
+    padding-left: 30px;
+    padding-right: 15px;
+    height: 300px;
+    align-items: center;
+}
+
+.SliderItemLeftBlock > img {
+    width: 100%;
+}
+
+.SliderItemImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: top center;
+}
+
+.SliderItemRightBlock {
+    padding-left: 15px;
+    align-items: center;
+}
+
+.SliderItemRightBlock > div {
+    position: relative;
+    height: 300px;
+}
+
+.SliderItemRightBlock h2 {
+    display: block;
+    font-size: 35px;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.SliderItemRightBlock p {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 40px;
+    line-height: 30px;
+    color: gray;
+}
+
+.SliderItemButtonGroup {
+    position: absolute;
+    bottom: 15px;
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.SliderItemButtonGroup a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    border-radius: 5px;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: bolder;
+}
+
+.SliderItemButtonGroup a:not(:last-child) {
+    margin-right: 40px;
+}
+
+.ButtonChoice {
+    background-color: #6d64ff;
+    color: #fafafa;
+}
+
+.ButtonMore {
+    border: 2px solid #6d64ff;
+    color: #6d64ff;
+}

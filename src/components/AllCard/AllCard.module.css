@@ -1,0 +1,57 @@
+.AllCard {
+    position: relative;
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.AllCardItems {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.AllCardItem {
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 40px;
+}
+
+.AllCardItem a {
+    text-decoration: none;
+    color: #282c34;
+    margin: 20px;
+    display: block;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.05);
+    transition: all .25s ease-in;
+    border: 1px solid #eaeaea;
+}
+
+.AllCardItem a:hover {
+    box-shadow: 0 0 12px rgba(0,0,0,0.10);
+}
+
+.AllCardImage img {
+    width: 100%;
+}
+
+.AllCardDescription {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.AllCardDescription h2 {
+    margin-top: 0;
+    font-size: 35px;
+}
+
+.AllCardDescription p {
+    font-size: 20px;
+    color: gray;
+    padding-bottom: 40px;
+    display: block;
+}
