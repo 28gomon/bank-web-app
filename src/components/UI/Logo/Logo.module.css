@@ -11,6 +11,7 @@
     align-items: center;
     text-decoration: none;
     color: #282c34;
+    outline: none;
 }
 
 .Logo a p {

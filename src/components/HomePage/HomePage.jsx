@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Slider from 'react-slick';
 import { NavLink } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
@@ -6,7 +6,6 @@ import "slick-carousel/slick/slick-theme.css";
 import classes from './HomePage.module.css';
 
 import cardImage from '../../assets/image/card-1.png';
-import { Loader } from "../UI/Loader/Loader";
 
 export const imageArray = [ cardImage, cardImage ];
 
@@ -23,24 +22,12 @@ export const HomePage = ( props ) => {
 		autoplaySpeed: 3000
 	};
 
-	useEffect(() => {
-		props.getCardSlider();
-		// eslint-disable-next-line
-	}, []);
-
-	const [ cardInfo, setCardInfo ] = useState([]);
-	useEffect(() => {
-		setCardInfo(props.cards);
-	}, [ props.cards ]);
-
-	if ( props.loaded ) return <Loader/>
-
 	return (
 		<div className={ classes.HomeSlider }>
 
 			<Slider { ...settingsSlider } >
 				{
-					cardInfo.map(( card, index ) => {
+					props.cardInfo.map(( card, index ) => {
 						return (
 							<div key={ index }>
 								<div className={ classes.SliderItem }>
