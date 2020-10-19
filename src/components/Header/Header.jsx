@@ -46,6 +46,7 @@ export const Header = ( props ) => {
 				isFetch={props.isFetch}
 				toggleNav={ toggleNav }
 				handlerToggleNav={handlerToggleNav}
+				handlerLogoutClient={props.handlerLogoutClient}
 			/>
 		</>
 	)

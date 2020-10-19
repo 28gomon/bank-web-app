@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import { Header } from "./Header";
 import { activeMenuThunkCreator } from "../../redux/reducer-menu";
-import { GetClientThunkCreator } from "../../redux/reducer-auth-user";
+import { GetClientThunkCreator, LogoutClientThunkCreator } from "../../redux/reducer-auth-user";
 
 const HeaderContainer = (props) => {
 
@@ -18,10 +18,19 @@ const HeaderContainer = (props) => {
 		setClient(props.client);
 	}, [props.client]);
 
+	const handlerLogoutClient = () => {
+		props.logoutClient();
+		if (localStorage.length !== 0) {
+			delete localStorage.login;
+			delete localStorage.password;
+		}
+	};
+
 	return (
 		<Header
 			{...props}
 			client={client}
+			handlerLogoutClient={handlerLogoutClient}
 		/>
 	)
 };
@@ -40,6 +49,7 @@ const mapDispatchToProps = (dispatch) => {
 	return {
 		activeMenuAction: (active) => dispatch(activeMenuThunkCreator(active)),
 		getClient: (login, password) => dispatch(GetClientThunkCreator(login, password)),
+		logoutClient: () => dispatch(LogoutClientThunkCreator()),
 	}
 };
 

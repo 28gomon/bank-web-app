@@ -2,7 +2,7 @@ import { userAPI } from "../api/api";
 
 const GET_CLIENTS = 'app/reducer-auth-user/GET_CLIENTS';
 const LOADED_DATA = 'app/reducer-auth-user/LOADED_DATA';
-// const LOGOUT_USER = 'app/reducer-auth-user/LOGOUT_USER';
+const LOGOUT_CLIENT = 'app/reducer-auth-user/LOGOUT_CLIENT';
 const ERROR_MESSAGE = 'app/reducer-auth-user/ERROR_MESSAGE';
 const LOGIN_AUTH = 'app/reducer-auth-user/LOGIN_AUTH';
 const PASSWORD_AUTH = 'app/reducer-auth-user/PASSWORD_AUTH';
@@ -55,6 +55,12 @@ export const reducerAuthUser = (
 		case GET_CARD_ID:
 			return {
 				...state, cardId: action.cardId
+			}
+
+		case LOGOUT_CLIENT:
+			return {
+				...state, client: {}, cardId: null, loaded: false, password: '', login: '',
+				validate: false, errorMessage: false, isFetch: false
 			}
 
 		case ERROR_MESSAGE:
@@ -112,6 +118,12 @@ const GetCardId = (cardId) => {
 	}
 };
 
+const LogoutClient = () => {
+	return {
+		type: LOGOUT_CLIENT,
+	}
+};
+
 export const GetClientThunkCreator = (login, password) => {
 	return dispatch => {
 		if ( login.trim() === '' || login.length < 3 ) {
@@ -148,5 +160,11 @@ export const GetPasswordThunkCreator = (password) => {
 export const GetCardIdThunkCreator = (cardId) => {
 	return dispatch => {
 		dispatch(GetCardId(cardId));
+	}
+};
+
+export const LogoutClientThunkCreator = () => {
+	return dispatch => {
+		dispatch(LogoutClient());
 	}
 };

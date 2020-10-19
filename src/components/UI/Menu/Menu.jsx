@@ -27,10 +27,13 @@ const Menu = ( props ) => {
 								</div>
 								<div className={classes.NavHeaderClientBtnGroup}>
 									<div><NavLink to={'/client-office'}>Личный кабинет</NavLink></div>
-									<div><Button>Выйти</Button></div>
+									<div><Button onClick={() => {
+										props.handlerLogoutClient();
+										handleToggleNav();
+									}}>Выйти</Button></div>
 								</div>
 							</div>
-							: <div>By</div>
+							: <div><NavLink onClick={handleToggleNav} to={'/user-auth'}>Войти</NavLink></div>
 					}
 				</div>
 
