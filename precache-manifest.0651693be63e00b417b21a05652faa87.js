@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7a5be24924d7f84769190d942913b6dd",
+    "revision": "973a581a3aec988bf2b53ae3de1baad0",
     "url": "/bank-web-app/index.html"
   },
   {
-    "revision": "be8cafc7f340b7e873e6",
+    "revision": "8a9afa3d28aac44a2d5d",
     "url": "/bank-web-app/static/css/2.a1e496f8.chunk.css"
   },
   {
-    "revision": "3a1e1c8abb4daca60c00",
-    "url": "/bank-web-app/static/css/main.6c43a32b.chunk.css"
+    "revision": "7b6812e6423f4c1a996a",
+    "url": "/bank-web-app/static/css/main.34703465.chunk.css"
   },
   {
-    "revision": "be8cafc7f340b7e873e6",
-    "url": "/bank-web-app/static/js/2.862b8edf.chunk.js"
+    "revision": "8a9afa3d28aac44a2d5d",
+    "url": "/bank-web-app/static/js/2.accc6f0c.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/bank-web-app/static/js/2.862b8edf.chunk.js.LICENSE.txt"
+    "url": "/bank-web-app/static/js/2.accc6f0c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3a1e1c8abb4daca60c00",
-    "url": "/bank-web-app/static/js/main.7db6c5ff.chunk.js"
+    "revision": "7b6812e6423f4c1a996a",
+    "url": "/bank-web-app/static/js/main.b19deecf.chunk.js"
   },
   {
     "revision": "caabe7e9d581bc4a8a8f",
