@@ -33,7 +33,9 @@ const Menu = ( props ) => {
 									}}>Выйти</Button></div>
 								</div>
 							</div>
-							: <div><NavLink onClick={handleToggleNav} to={'/user-auth'}>Войти</NavLink></div>
+							: <div className={classes.NavHeaderAuthBtn}>
+								<NavLink onClick={handleToggleNav} to={'/user-auth'}>Войти</NavLink>
+							</div>
 					}
 				</div>
 
