@@ -10,3 +10,14 @@ export const cardAPI = {
 		return await instance.get('card.json');
 	},
 };
+
+export const userAPI = {
+
+	authUser: async () => {
+		return await instance.get('clients.json');
+	},
+
+	authorized: async (authorized) => {
+		return instance.post('clients.json', {authorized: authorized});
+	},
+};

@@ -7,6 +7,8 @@ export const AllCard = ( props ) => {
 	return (
 		<div className={ classes.AllCard }>
 
+			<h1 className={classes.AllCardTitle}>Карты для заказа</h1>
+
 			<div className={ classes.AllCardItems }>
 				{
 					props.cards.map(( card, index ) => {

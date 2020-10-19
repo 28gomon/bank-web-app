@@ -1,0 +1,51 @@
+.OrderCard {
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.OrderCardWrapper {
+    margin-top: 50px;
+}
+
+.OrderCardHeader {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 20px;
+    min-height: 430px;
+}
+
+.OrderCardInfo {
+    width: 50%;
+    padding-right: 15px;
+}
+
+.OrderCardInfo p {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.OrderCardInfo p span {
+    color: gray;
+    font-weight: bolder;
+}
+
+.OrderCardInfo ul {
+    padding-left: 18px;
+}
+
+.OrderCardInfo ul li {
+    height: 30px;
+    font-size: 18px;
+}
+
+.OrderCardImage {
+    width: 50%;
+    padding-left: 15px;
+}
+
+.OrderCardImage img {
+    width: 100%;
+}

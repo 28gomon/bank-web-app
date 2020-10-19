@@ -5,7 +5,7 @@ const LOADED_CARD_DATA = 'app/reducer-card-detail/LOADED_CARD_DATA';
 
 const initialState = {
 	card: {},
-	loaded: false
+	loaded: false,
 };
 
 export const reducerCardDetail = ( state = initialState, action ) => {
@@ -13,12 +13,14 @@ export const reducerCardDetail = ( state = initialState, action ) => {
 
 		case GET_CARD_DETAIL:
 			return {
-				...state, card: {...state.card, ...action.cards.find(card => card.id === action.id)}
+				...state,
+				card: {...state.card, ...action.cards.find(card => card.id === action.id)},
 			};
 
 		case LOADED_CARD_DATA:
 			return {
-				...state, loaded: action.isFetch
+				...state,
+				loaded: action.isFetch,
 			};
 
 		default:
@@ -30,14 +32,14 @@ const getCardDetail = (cards, id) => {
 	return {
 		type: GET_CARD_DETAIL,
 		cards,
-		id
+		id,
 	}
 };
 
 const loadedCardData = (isFetch) => {
 	return {
 		type: LOADED_CARD_DATA,
-		isFetch
+		isFetch,
 	}
 };
 

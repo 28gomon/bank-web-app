@@ -16,7 +16,13 @@
 }
 
 .NavHeader {
-    padding: 40px 40px 0 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 80px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eaeaea;
+    display: flex;
+    align-items: center;
 }
 
 .NavWrapper {
@@ -49,4 +55,37 @@
 
 .Nav > div a:hover {
     color: #6d64ff
+}
+
+.NavHeaderClientInfo {
+    position: relative;
+}
+
+.NavHeaderClientName span {
+    color: #4c535f;
+    font-weight: bolder;
+}
+
+.NavHeaderClientBtnGroup {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.NavHeaderClientBtnGroup a {
+    margin-right: 20px;
+    font-weight: bolder;
+    color: #6d64ff;
+    text-decoration: none;
+}
+
+.NavHeaderClientBtnGroup button {
+    background-color: #6d64ff;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    height: 25px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
 }

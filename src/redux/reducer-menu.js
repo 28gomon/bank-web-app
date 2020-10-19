@@ -1,7 +1,7 @@
 const ACTIVE_MENU = 'app/menu/ACTIVE_MENU';
 
 const initialState = {
-	active: false
+	active: false,
 };
 
 export const reducerMenu = (state = initialState, action) => {
@@ -9,7 +9,7 @@ export const reducerMenu = (state = initialState, action) => {
 
 		case ACTIVE_MENU:
 			return {
-				...state, active: action.active
+				...state, active: action.active,
 			};
 
 		default:
@@ -20,7 +20,7 @@ export const reducerMenu = (state = initialState, action) => {
 const activeMenu = (active) => {
 	return {
 		type: ACTIVE_MENU,
-		active
+		active,
 	}
 };
 

@@ -5,7 +5,7 @@ const LOADED_CARD_DATA = 'app/slider/LOADED_CARD_DATA';
 
 const initialState = {
 	cards: null,
-	loaded: false
+	loaded: false,
 };
 
 export const reducerSlider = (state = initialState, action) => {
@@ -13,12 +13,14 @@ export const reducerSlider = (state = initialState, action) => {
 
 		case GET_CARD_SLIDER:
 			return {
-				...state, cards: action.cards
+				...state,
+				cards: action.cards,
 			};
 
 		case LOADED_CARD_DATA:
 			return {
-				...state, loaded: action.load
+				...state,
+				loaded: action.load,
 			};
 
 		default:
@@ -29,14 +31,14 @@ export const reducerSlider = (state = initialState, action) => {
 const getCardInformation = (cards) => {
 	return {
 		type: GET_CARD_SLIDER,
-		cards
+		cards,
 	}
 };
 
 const loadedData = (load) => {
 	return {
 		type: LOADED_CARD_DATA,
-		load
+		load,
 	}
 };
 

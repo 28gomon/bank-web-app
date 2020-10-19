@@ -42,6 +42,8 @@ export const Header = ( props ) => {
 
 			</div>
 			<Menu
+				client={props.client}
+				isFetch={props.isFetch}
 				toggleNav={ toggleNav }
 				handlerToggleNav={handlerToggleNav}
 			/>

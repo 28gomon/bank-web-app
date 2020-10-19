@@ -14,6 +14,7 @@ const AllCardContainer = ( props) => {
 	const [cards, setCards] = useState([]);
 	useEffect(() => {
 		setCards(props.cards);
+		// eslint-disable-next-line
 	}, [props.cards]);
 
 	if (props.loaded) return <Loader/>

@@ -1,0 +1,81 @@
+.AuthUser {
+    position: relative;
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.AuthUserWrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.AuthUserForm {
+    width: 100%;
+    max-width: 680px;
+}
+
+.AuthUserForm h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.AuthForm {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.05);
+    transition: all .25s ease-in;
+    border: 1px solid #eaeaea;
+}
+
+.AuthUserFromLogin {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.AuthUserFromLogin label, .AuthUserFromPassword label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    color: gray;
+}
+
+.AuthUserFromLogin input, .AuthUserFromPassword input {
+    width: 100%;
+    height: 50px;
+    padding-left: 15px;
+    font-size: 20px;
+    outline: none;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+}
+
+.AuthUserFromPassword {
+    margin-bottom: 40px;
+}
+
+.AuthUserFormBtn {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+}
+
+.StyleBtn {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #ffffff;
+    background-color: #6d64ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.StyleBtn:disabled {
+    cursor: default;
+    background-color: #eaeaea;
+    color: gray;
+}

@@ -15,6 +15,7 @@ const CardDetailContainer = (props) => {
 	const [card, setCard] = useState({});
 	useEffect(() => {
 		setCard(props.card);
+		// eslint-disable-next-line
 	}, [props.card]);
 
 	if ( Object.keys(card).length === 0 && card.constructor === Object ) {
@@ -35,7 +36,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = ( dispatch ) => {
 	return {
-		getCardDetail: ( id ) => dispatch(getCardDetailThunkCreator(id))
+		getCardDetail: ( id ) => dispatch(getCardDetailThunkCreator(id)),
 	}
 };
 
