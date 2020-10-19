@@ -44,12 +44,12 @@ export const reducerAuthUser = (
 
 		case LOGIN_AUTH:
 			return {
-				...state, login: action.login.trim(),
+				...state, login: action.login,
 			};
 
 		case PASSWORD_AUTH:
 			return {
-				...state, password: action.password.trim(),
+				...state, password: action.password,
 			}
 
 		case GET_CARD_ID:

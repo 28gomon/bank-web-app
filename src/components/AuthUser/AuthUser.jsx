@@ -5,11 +5,11 @@ import { Button } from "../UI/Buttons/Button/Button";
 export const AuthUser = ({ login, password, ...props }) => {
 
 	const handlerLogin = (event) => {
-		props.getLogin(event.currentTarget.value);
+		props.getLogin(event.currentTarget.value.trim());
 	};
 
 	const handlerPassword = (event) => {
-		props.getPassword(event.currentTarget.value);
+		props.getPassword(event.currentTarget.value.trim());
 	};
 
 	return (
