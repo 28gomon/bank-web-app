@@ -24,3 +24,14 @@
     height: 42px;
     margin-right: 20px;
 }
+
+@media only screen and (max-width: 768px) {
+
+    .Logo {
+        width: 50px;
+    }
+
+    .Logo a p {
+        display: none;
+    }
+}

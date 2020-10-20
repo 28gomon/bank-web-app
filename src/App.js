@@ -8,7 +8,7 @@ import AllCardContainer from "./components/AllCard/AllCardContainer";
 import OrderCardContainer from "./components/OrderCard/OrderCardContainer";
 import AuthUserContainer from "./components/AuthUser/AuthUserContainer";
 
-function App() {
+const App = () => {
 	return (
 		<div className="App">
 

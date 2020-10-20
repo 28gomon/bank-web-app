@@ -8,8 +8,6 @@ export const OrderCard = ( { clientInfo, card } ) => {
 	return (
 		<div className={ classes.OrderCard }>
 
-			{/*<h1>{clientInfo.userInf.personalData.firstName}</h1>*/}
-
 			<div className={classes.OrderCardWrapper}>
 
 				<div className={classes.OrderCardHeader}>
@@ -28,7 +26,7 @@ export const OrderCard = ( { clientInfo, card } ) => {
 						</ul>
 					</div>
 					<div className={classes.OrderCardImage}>
-						<img src={`${imageArray[card.id - 1]}`} alt=""/>
+						<img src={`${imageArray[card.id - 1]}`} alt={card.title}/>
 					</div>
 				</div>
 

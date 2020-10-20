@@ -103,3 +103,15 @@
     text-decoration: none;
     font-weight: bolder;
 }
+
+@media only screen and (max-width: 480px) {
+
+    .Menu {
+        width: 300px;
+        right: -300px;
+    }
+
+    .ActiveMenu {
+        right: 0;
+    }
+}

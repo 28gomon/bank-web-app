@@ -79,3 +79,23 @@
     background-color: #eaeaea;
     color: gray;
 }
+
+.AuthUserFormBtnRegistration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    margin-top: 20px;
+}
+
+.AuthUserFormBtnRegistration a {
+    text-decoration: none;
+    color: #6d64ff;
+    font-weight: bolder;
+    transition: color .25s ease-in;
+    padding: 10px;
+}
+
+.AuthUserFormBtnRegistration a:hover {
+    color: #2f2a9d;
+}

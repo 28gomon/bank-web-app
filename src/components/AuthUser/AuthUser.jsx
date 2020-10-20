@@ -1,6 +1,7 @@
 import React from "react";
 import classes from './AuthUser.module.css';
 import { Button } from "../UI/Buttons/Button/Button";
+import { NavLink } from "react-router-dom";
 
 export const AuthUser = ({ login, password, ...props }) => {
 
@@ -49,6 +50,10 @@ export const AuthUser = ({ login, password, ...props }) => {
 										? false : true
 								}
 								styleButton={classes.StyleBtn}>Авторизоваться</Button>
+						</div>
+
+						<div className={classes.AuthUserFormBtnRegistration}>
+							<NavLink to={'/registration'}>Зарегистрироваться</NavLink>
 						</div>
 					</div>
 				</div>
