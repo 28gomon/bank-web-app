@@ -62,3 +62,15 @@
     transform: rotate(45deg);
     transition: all .25s ease-in-out;
 }
+
+@media only screen and (max-width: 480px) {
+
+    .ButtonHamburger {
+        width: 30px;
+        height: 30px;
+    }
+
+    .ActiveNav {
+        right: 250px;
+    }
+}
