@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/bank-web-app/static/css/main.133b61ab.chunk.css",
+    "main.css": "/bank-web-app/static/css/main.b9b68d11.chunk.css",
     "main.js": "/bank-web-app/static/js/main.136f7bcb.chunk.js",
     "main.js.map": "/bank-web-app/static/js/main.136f7bcb.chunk.js.map",
     "runtime-main.js": "/bank-web-app/static/js/runtime-main.ea75e14b.js",
@@ -9,10 +9,10 @@
     "static/js/2.accc6f0c.chunk.js": "/bank-web-app/static/js/2.accc6f0c.chunk.js",
     "static/js/2.accc6f0c.chunk.js.map": "/bank-web-app/static/js/2.accc6f0c.chunk.js.map",
     "index.html": "/bank-web-app/index.html",
-    "precache-manifest.5a6becb6253c989bbd6a13b780ccfa9e.js": "/bank-web-app/precache-manifest.5a6becb6253c989bbd6a13b780ccfa9e.js",
+    "precache-manifest.9b16b6e72c5473498b285c3f6b225585.js": "/bank-web-app/precache-manifest.9b16b6e72c5473498b285c3f6b225585.js",
     "service-worker.js": "/bank-web-app/service-worker.js",
     "static/css/2.a1e496f8.chunk.css.map": "/bank-web-app/static/css/2.a1e496f8.chunk.css.map",
-    "static/css/main.133b61ab.chunk.css.map": "/bank-web-app/static/css/main.133b61ab.chunk.css.map",
+    "static/css/main.b9b68d11.chunk.css.map": "/bank-web-app/static/css/main.b9b68d11.chunk.css.map",
     "static/js/2.accc6f0c.chunk.js.LICENSE.txt": "/bank-web-app/static/js/2.accc6f0c.chunk.js.LICENSE.txt",
     "static/media/card-1.png": "/bank-web-app/static/media/card-1.ac8ade58.png",
     "static/media/slick-theme.css": "/bank-web-app/static/media/slick.f97e3bbf.svg"
@@ -21,7 +21,7 @@
     "static/js/runtime-main.ea75e14b.js",
     "static/css/2.a1e496f8.chunk.css",
     "static/js/2.accc6f0c.chunk.js",
-    "static/css/main.133b61ab.chunk.css",
+    "static/css/main.b9b68d11.chunk.css",
     "static/js/main.136f7bcb.chunk.js"
   ]
 }
